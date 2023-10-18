@@ -1,0 +1,17 @@
+<table class="table table-striped table-bordered">
+  <thead>
+    <th>Mã thực đơn</th>
+    <th>Tên thực đơn</th>
+    <th>Tuỳ chọn</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tDon of DSThucDon">
+      <td>{{ tDon.MaThucDon }}</td>
+      <td>{{ tDon.TenThucDon }}</td>
+      <td>
+        <button type="button" class="btn btn-warning mr-2">Sửa</button>
+        <button type="button" class="btn btn-danger">Xoá</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
